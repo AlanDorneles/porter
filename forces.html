@@ -14,18 +14,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <span class="material-symbols-outlined back">
         arrow_back
       </span>
-      <div class="modal">
-        <div class="texto">
+      <div class="modal" id="modal">
+        <div class="texto" id="concorrente">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos enim vero quam dolores, saepe ullam non commodi nisi atque harum, pariatur beatae rem accusantium excepturi dolorem ab asperiores veniam?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos enim vero quam dolores, saepe ullam non commodi nisi atque harum, pariatur beatae rem accusantium excepturi dolorem ab asperiores veniam?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos enim vero quam dolores, saepe ullam non commodi nisi atque harum, pariatur beatae rem accusantium excepturi dolorem ab asperiores veniam?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos enim vero quam dolores, saepe ullam non commodi nisi atque harum, pariatur beatae rem accusantium excepturi dolorem ab asperiores veniam?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos enim vero quam dolores, saepe ullam non commodi nisi atque harum, pariatur beatae rem accusantium excepturi dolorem ab asperiores veniam?
+          </p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos enim vero quam dolores, saepe ullam non commodi nisi atque harum, pariatur beatae rem accusantium excepturi dolorem ab asperiores veniam?
           </p>
         </div>
         <img src="/imagens/undraw_business_decisions_re_84ag (1).svg" alt="novos-entrantes" class="bg-modal">
-        <span class="material-symbols-outlined close">
+        <span class="material-symbols-outlined close" onclick="fechar()">
           close
+        </span>
+        <span class="material-symbols-outlined see-more" onclick="abriraba()">
+          arrow_downward
         </span>
       </div>
       <div class="force">
@@ -49,7 +62,7 @@
       <div class="force">
         <div class="container-icons">
           <span class="material-symbols-outlined"> local_shipping </span>
-          <p>FORNCEDORES</p>
+          <p>FORNECEDORES</p>
         </div>
       </div>
       <div class="force">
@@ -61,5 +74,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
