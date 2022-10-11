@@ -7,6 +7,7 @@ var close = document.getElementsByClassName("close")[0];
 for (var i = 0; i < force.length; i++) {
   force[i].onclick = function() {
     modal.style.display = 'block';
+    modal.style.overflow = "clip";  
     
     
   
@@ -45,3 +46,4 @@ function fechar(){
   document.getElementById("modal").style.overflow = "clip";
 
 }
+
