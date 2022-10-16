@@ -3,16 +3,16 @@ var container = document.getElementById("container");
 var force = document.getElementsByClassName('force');
 var seemore= document.getElementsByClassName("see-more")
 var close = document.getElementsByClassName("close")[0];
+;
 
 for (var i = 0; i < force.length; i++) {
   force[i].onclick = function() {
     modal.style.display = 'block';
-    modal.style.overflow = "clip";  
-    
-    
-  
-  var close = document.getElementsByClassName('close');
-  close[0].onclick = function() {
+    modal.style.overflow = "clip";
+    $(document).on("click", ".force", function () {
+      document.getElementById("iframe").setAttribute("src", this.id+".html");
+    }); 
+  close.onclick = function() {
     modal.style.display = 'none';
     modal.style.width = "75%";
     modal.style.height = "75%";
@@ -35,6 +35,7 @@ function abriraba(){
   /*espandir a aba*/
   document.getElementById("modal").style.width = "100%";
   document.getElementById("modal").style.height = "100%";
+  document.getElementById("modal").style.transition = "0.3s"
   document.getElementById("modal").style.overflow = "auto";
   seemore[0].style.display = "none";
 }
