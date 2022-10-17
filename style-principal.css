@@ -18,6 +18,7 @@
   width: 100%; 
   position: absolute;
 }
+
 .header{
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -54,15 +55,16 @@
   flex-direction: row;
 }
 .dd-menu ul li ul{
-  display: block;
+  display: none;
   flex-direction: column;
   position: absolute;
   padding: 2% 0;
   width: 20%;
   transition: 0.3s;
-  background-color: var(--cor-secundaria);
-  top:5%;
+  background-color: var(--cor-principal);
+  top:3.8%;
   text-align: center;
+  line-height: 140%;
 
 
 }
@@ -87,6 +89,7 @@
   display: flex;
   font-family: var(--font-principal);
   letter-spacing: 0.07em;
+  text-align: justify;
   
 }
 .content-blue{

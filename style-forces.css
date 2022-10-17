@@ -12,9 +12,10 @@
   flex-direction: row;
   min-height: 100vh;
   background: white;
+  width: 100%;
 }
 .back{
-  position:fixed;
+  position:absolute;
   margin-left: 0.3em;
   margin-top: 0.3em;
   transition: 0.2s;
@@ -31,6 +32,8 @@
   flex: 1;
   background-color: var(--cor-principal);
   transition: 0.2s;
+  width: 20%;
+  
 }
 .force:hover{
   background-color: var(--cor-secundaria);
@@ -39,7 +42,6 @@
 .force p{
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 0.5em;
   font-family: 'Roboto', sans-serif;
 }
 .container-icons{
@@ -141,4 +143,22 @@
 }
 .see-more:hover{
   background-color: var(--cor-secundaria);
+}
+@media(max-width:600px){
+  .force p{
+    font-size: 0.3rem;
+  }
+  .material-symbols-outlined{
+  font-size: 1.2rem !important;
+
+}
+}
+@media(min-width:601px) and (max-width:1000px){
+  .force p{
+    font-size: 0.5rem;
+  }
+  .material-symbols-outlined{
+  font-size: 1.6rem !important;
+
+}
 }

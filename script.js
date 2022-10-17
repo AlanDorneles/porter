@@ -3,7 +3,7 @@ var container = document.getElementById("container");
 var force = document.getElementsByClassName('force');
 var seemore= document.getElementsByClassName("see-more")
 var close = document.getElementsByClassName("close")[0];
-;
+
 
 for (var i = 0; i < force.length; i++) {
   force[i].onclick = function() {
