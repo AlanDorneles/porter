@@ -102,7 +102,6 @@
   text-justify: inter-word;
   font-family: 'Roboto', sans-serif;
   text-overflow: ellipsis;
-  border: 1px solid;
   overflow: hidden !important;
 }
 .titulo{
